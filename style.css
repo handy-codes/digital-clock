@@ -1,35 +1,50 @@
 body{
-    background-image: url(./image/maserati.2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    
-}
-#clock-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    margin: auto;
-}
-#clock{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 6.5rem;
-    font-weight: bold;
-    text-align: center;
-    backdrop-filter: blur(50px);
-    background-color: hsla(0, 0%, 100%, 0.1);
-    width: 100%;
-    color: hsl(349, 91%, 34%);
-    text-shadow: 4px 4px 0px black;
+  background-image: url(./image/maserati.2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
 }
 
-@media(max-width: 639px){
-    #clock{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 4rem;
-    }    
+#clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  margin: auto;
 }
+
+#clock {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-align: center;
+  backdrop-filter: blur(50px);
+  background-color: hsla(0, 0%, 100%, 0.1);
+  width: 100%;
+  color: hsl(349, 91%, 34%);
+  text-shadow: 4px 4px 0px black;
+}
+
+#date {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  backdrop-filter: blur(50px);
+  background-color: hsla(0, 0%, 100%, 0.1);
+  width: 100%;
+  color: white;
+  text-shadow: 4px 4px 0px black;
+}
+
+/* Responsive design */
+@media (max-width: 639px) {
+  #clock {
+    font-size: 4rem;
+  }
+}
+
